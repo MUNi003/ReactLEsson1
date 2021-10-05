@@ -1,0 +1,48 @@
+.blockCard{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.rowCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+.Card{
+    width: 28%;
+    min-width: 260px;
+    padding: 1%;
+    background: white;
+    box-shadow: 0 0 20px 2px black;
+    border-radius: 20px;
+    margin: 1%;
+}
+.cardImg img{
+    width: 100%;
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px ;
+}
+.cardTitle h3{
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width:937px) {
+    .Card{
+        width: 45%;
+        min-width: 200px !important;
+    }
+    .cardTitle h3{
+        font-size: 15px;
+    }
+}
+@media (max-width:500px) {
+    .Card{
+        width: 90%;
+        margin-bottom: 3%;
+    }
+    .rowCard{
+        justify-content: center;
+    }
+}
